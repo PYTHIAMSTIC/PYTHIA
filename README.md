@@ -27,6 +27,15 @@ forge build
 forge install OpenZeppelin/openzeppelin-contracts
 ```
 
+update to latest and greatest
+```bash
+forge update OpenZeppelin/openzeppelin-contracts
+```
+
+lock to a specific openzeppelin release
+```bash
+forge install OpenZeppelin/openzeppelin-contracts@v4.8.0
+```
 
 # frontend UIUX
 
