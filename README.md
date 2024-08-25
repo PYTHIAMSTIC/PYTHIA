@@ -1,6 +1,5 @@
 # PYTHIA
-loose documentation of the development steps to create PYTHIA<br />
-while scaffold-eth2 has its momements I prefer foundry<br />
+devdocs for me....
 
 create a new directory named pythia with the following structure:<br />
 
