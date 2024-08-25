@@ -22,6 +22,11 @@ cd pythia
 forge build
 ```
 
+# add openzeppelin to foundry
+```bash
+forge install OpenZeppelin/openzeppelin-contracts
+```
+
 
 # frontend UIUX
 
