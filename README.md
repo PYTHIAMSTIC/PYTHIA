@@ -32,7 +32,7 @@ update to latest and greatest
 forge update OpenZeppelin/openzeppelin-contracts
 ```
 
-lock to a specific openzeppelin release
+lock to a specific release
 ```bash
 forge install OpenZeppelin/openzeppelin-contracts@v4.8.0
 ```
