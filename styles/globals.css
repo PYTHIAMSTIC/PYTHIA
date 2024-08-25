@@ -1,0 +1,186 @@
+/* 
+  GLOBAL STYLESHEET FOR PYTHIA PROJECT
+  ====================================
+  This stylesheet is designed to give the PYTHIA project a unique visual identity
+  by using shades of green and gold. The colors and styles reflect ancient mysticism
+  while promoting a positive and inviting user experience. The choices made here are
+  intended to evoke a connection to nature and historical richness, aligning with the
+  project's themes.
+
+  Color Palette:
+  --------------
+  - Dark Green (#0b3d0b): Background color that symbolizes depth, nature, and mysticism.
+  - Gold (#ffd700): Accent color used for highlights, borders, and important elements, symbolizing value and wisdom.
+  - Light Gold (#f0e68c): Primary text color that is readable and warm, complementing the dark green background.
+  - Pale Green (#98fb98): Hover effect color that adds a refreshing and lively interaction.
+  - Olive Drab (#6b8e23) and Sea Green (#2e8b57): Used for buttons and cards to add variety within the green theme.
+  - Wheat (#f5deb3): Subtle color for placeholder text, providing a neutral contrast.
+
+  This file contains global styles, utility classes, and custom component styles.
+*/
+
+/* 
+  Body Styles:
+  ------------
+  - Sets the overall background color to a deep, mystic green.
+  - Uses a light gold color for the text to ensure readability against the dark background.
+  - The font-family is chosen for its modern readability while maintaining a clean look.
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b3d0b; /* Dark Green for the background */
+  color: #f0e68c; /* Light Gold for the text */
+  line-height: 1.6; /* Improves readability with a comfortable line spacing */
+}
+
+/* 
+  Link Styles:
+  ------------
+  - Links are styled in gold to stand out as clickable elements.
+  - A smooth transition effect is applied to color changes on hover for a refined interaction.
+  - On hover, links turn pale green, indicating interactivity with a positive vibe.
+*/
+a {
+  color: #ffd700; /* Gold */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+a:hover {
+  color: #98fb98; /* Pale Green on hover */
+}
+
+/* 
+  Header Styles (h1 - h6):
+  -------------------------
+  - Headers use varying shades of green and yellow to create hierarchy and visual interest.
+  - A subtle shadow effect on h1 adds to the mystic theme, giving it a slightly ethereal look.
+*/
+h1, h2, h3, h4, h5, h6 {
+  color: #adff2f; /* Green-Yellow */
+  margin-bottom: 1rem; /* Spacing below headers for readability */
+}
+
+h1 {
+  font-size: 2.5rem; /* Large font size for main headings */
+  text-shadow: 2px 2px 5px #000; /* Adds a subtle shadow for a mystical effect */
+}
+
+h2 {
+  font-size: 2rem; /* Slightly smaller than h1, but still prominent */
+}
+
+h3 {
+  font-size: 1.75rem; /* Smaller headers for sub-sections */
+}
+
+/* 
+  Button Styles:
+  --------------
+  - Buttons are styled with dark olive green to stand out while maintaining the color scheme.
+  - The text color is wheat, providing a warm contrast.
+  - Buttons have gold borders to emphasize their importance as interactive elements.
+  - Hover effects include a background color change to olive drab and a text color change to white.
+*/
+button {
+  background-color: #556b2f; /* Dark Olive Green */
+  color: #f5deb3; /* Wheat */
+  border: 2px solid #ffd700; /* Gold */
+  padding: 0.5rem 1rem; /* Comfortable padding for clickable areas */
+  font-size: 1rem; /* Standard font size for readability */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  cursor: pointer; /* Pointer cursor to indicate clickable element */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #6b8e23; /* Olive Drab */
+  color: #ffffff; /* White on hover */
+}
+
+/* 
+  Input and Textarea Styles:
+  ---------------------------
+  - Inputs and textareas are styled to blend with the theme while maintaining usability.
+  - Background is dark olive green, matching the buttons, and the text color is light gold.
+  - A subtle border and placeholder text in wheat provide a balanced, unobtrusive appearance.
+  - Focus styles include a pale green glow effect, indicating focus and enhancing the user experience.
+*/
+input, textarea {
+  background-color: #556b2f; /* Dark Olive Green */
+  color: #f0e68c; /* Light Gold */
+  border: 1px solid #adff2f; /* Green-Yellow */
+  padding: 0.5rem; /* Comfortable padding for typing */
+  border-radius: 5px; /* Rounded corners for a consistent design */
+  width: 100%; /* Full-width inputs for better usability */
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width/height */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #f5deb3; /* Wheat for placeholders */
+}
+
+input:focus, textarea:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #98fb98; /* Pale Green */
+  box-shadow: 0 0 5px #98fb98; /* Glow effect on focus */
+}
+
+/* 
+  Card Styles:
+  ------------
+  - Cards are styled with sea green to create a distinct, yet cohesive, block element.
+  - A rounded border and shadow effect give the card a modern look while maintaining the mystical theme.
+  - Text inside cards is light gold for consistency with the overall theme.
+*/
+.card {
+  background-color: #2e8b57; /* Sea Green */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  padding: 1.5rem; /* Ample padding inside the card for content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin: 1rem 0; /* Space between cards */
+  color: #f0e68c; /* Light Gold */
+}
+
+/* 
+  Footer Styles:
+  --------------
+  - The footer is styled to match the dark olive green of buttons and inputs.
+  - A gold border at the top provides a clear separation from the rest of the content.
+  - Text is light gold, keeping the theme consistent.
+*/
+footer {
+  background-color: #556b2f; /* Dark Olive Green */
+  color: #f0e68c; /* Light Gold */
+  padding: 1rem; /* Padding for comfortable spacing inside the footer */
+  text-align: center; /* Center-align text for a balanced layout */
+  border-top: 2px solid #ffd700; /* Gold */
+}
+
+/* 
+  Utility Classes:
+  ----------------
+  - Utility classes are provided for common styles like text alignment, background colors, and shadows.
+  - These classes can be used throughout the application to quickly style elements without repeating code.
+*/
+.text-center {
+  text-align: center; /* Center-align text */
+}
+
+.text-gold {
+  color: #ffd700; /* Gold text color */
+}
+
+.bg-green {
+  background-color: #006400; /* Dark Green background */
+}
+
+.bg-gold {
+  background-color: #ffd700; /* Gold background */
+}
+
+.shadow-mystic {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Deep shadow for a mystical effect */
+}
