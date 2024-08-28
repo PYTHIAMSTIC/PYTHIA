@@ -1,0 +1,48 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKON</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>enter the PORTAL</h1>
+        <button id="login-button">Login with Web3Auth</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@web3auth/web3auth@1.1.0"></script>
+    <script>
+        document.getElementById('login-button').addEventListener('click', async function () {
+            console.log('Login button clicked');
+            const clientId = '<?= process.env.WEB3AUTH_CLIENT_ID ?>'; // Web3Auth Client ID
+
+            const web3auth = new Web3Auth({
+                clientId: clientId,
+                chainConfig: {
+                    chainNamespace: "eip155",
+                    chainId: "0x1", // Ethereum mainnet
+                    rpcTarget: "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"
+                }
+            });
+
+            await web3auth.initModal();
+            const provider = await web3auth.connect();
+
+            if (provider) {
+                console.log('Login successful');
+                document.getElementById('message').textContent = 'Login successful! Redirecting...';
+                setTimeout(() => {
+                    window.location.href = '/restricted';
+                }, 2000);
+            } else {
+                console.log('Login failed');
+                document.getElementById('message').textContent = 'Login failed!';
+            }
+        });
+    </script>
+</body>
+</html>
