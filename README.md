@@ -1,5 +1,20 @@
 # PYTHIA
-devdocs for me....
+```nodejs
+bankon-nodejs/
+├── public/
+│   ├── css/
+│   │   └── styles.css
+│   └── index.html
+├── routes/
+│   └── auth.js
+├── views/
+│   └── restricted.html
+├── server.js
+├── package.json
+└── .env
+```
+
+
 
 create a new directory named pythia with the following structure:<br />
 
