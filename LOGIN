@@ -1,0 +1,12 @@
+```php
+bankon-nodejs/
+├── public/
+│   ├── css/
+│   │   └── styles.css
+│   └── index.html
+├── views/
+│   └── restricted.html
+├── server.js
+├── package.json
+└── .env
+```
