@@ -14,3 +14,36 @@ bankon-nodejs/
 WEB3AUTH_CLIENT_ID=your-web3auth-client-id
 PORT=3000
 ```
+```javascript
+// server.js
+
+require('dotenv').config();
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+console.log('Serving static files from the public directory');
+
+// Basic routing for the main page
+app.get('/', (req, res) => {
+    console.log('Serving index.html');
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+
+// Restricted page routing
+app.get('/restricted', (req, res) => {
+    console.log('User accessed the restricted area');
+    res.sendFile(path.join(__dirname, 'views/restricted.html'));
+});
+
+// Starting the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+```
