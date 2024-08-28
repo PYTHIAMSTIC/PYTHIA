@@ -9,4 +9,8 @@ bankon-nodejs/
 ├── server.js
 ├── package.json
 └── .env
+
+# .env
+WEB3AUTH_CLIENT_ID=your-web3auth-client-id
+PORT=3000
 ```
