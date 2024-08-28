@@ -170,8 +170,8 @@ To run the application, use the following command:
 node server.js
 ```
 Server is running on http://localhost:3000
-9. Testing the Application
+
+# Testing the Application
 Login: Visit http://localhost:3000 in your browser. You should see the BANKON login page with the "Login with Web3Auth" button.
-Redirect: After successfully logging in via Web3Auth, the user will be redirected to the /restricted page, which is only accessible after logging in.
-10. Conclusion
+Redirect: After successfully logging in via Web3Auth, the user will be redirected to the /restricted page
 This third version of BANKON is a simple, pure Node.js example that demonstrates how to implement a basic login experience with Web3Auth. It includes a redirect to a restricted area upon successful authentication, providing a foundation for more complex web applications. This setup is minimal, focusing on core functionalities using plain HTML, CSS, and Node.js without the overhead of frameworks like Express or EJS templating.
