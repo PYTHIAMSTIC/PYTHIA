@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 
 // Restricted page routing
 app.get('/restricted', (req, res) => {
-    console.log('User accessed the restricted area');
+    console.log('participant_access_granted');
     res.sendFile(path.join(__dirname, 'views/restricted.html'));
 });
 
