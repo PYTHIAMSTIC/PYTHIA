@@ -166,13 +166,9 @@ p {
 8. Running the Application
 To run the application, use the following command:
 
-bash
-Copy code
+```bash
 node server.js
-You should see the following message in your terminal:
-
-arduino
-Copy code
+```
 Server is running on http://localhost:3000
 9. Testing the Application
 Login: Visit http://localhost:3000 in your browser. You should see the BANKON login page with the "Login with Web3Auth" button.
