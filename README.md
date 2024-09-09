@@ -77,7 +77,7 @@ pythia-nextjs/
 npx create-next-app pythia-nextjs
 cd pythia-nextjs
 npm init
-npm install next react react-dom @web3auth/core @web3auth/modal ethers wagmi @rainbow-me/rainbowkit
+npm install --save-dev @babel/core @babel/preset-env && npm install next react react-dom @web3auth/core @web3auth/modal ethers wagmi @rainbow-me/rainbowkit
 ```
 
 
