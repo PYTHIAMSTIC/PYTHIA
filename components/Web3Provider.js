@@ -1,13 +1,13 @@
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
-import { publicProvider } from 'wagmi/providers/public';
-import { ethers } from 'ethers';
+import { alchemyProvider } from '@wagmi/core/providers/alchemy';
+import Moralis from 'moralis';
 
-// Configure chains and providers
+// Configure chains and providers (using Alchemy as a provider)
 const { chains, provider } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
-  [publicProvider()]
+  [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY })]
 );
 
 // Configure default wallets for RainbowKit
@@ -24,7 +24,12 @@ export const wagmiClient = createClient({
   webSocketProvider: provider,
 });
 
-// Web3Provider component wrapping the app with RainbowKit and Wagmi configuration
+// Initialize Moralis with your Moralis server and app ID
+Moralis.start({
+  apiKey: process.env.NEXT_PUBLIC_MORALIS_API_KEY,
+});
+
+// Web3Provider component wrapping the app with RainbowKit, Wagmi, and Moralis configurations
 export const Web3Provider = ({ children }) => (
   <WagmiConfig client={wagmiClient}>
     <RainbowKitProvider chains={chains}>
@@ -32,3 +37,4 @@ export const Web3Provider = ({ children }) => (
     </RainbowKitProvider>
   </WagmiConfig>
 );
+
