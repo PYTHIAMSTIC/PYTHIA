@@ -1,6 +1,6 @@
 # PYTHIA (c) 2024 PYTHAI
 <a href="https://delphi.pythai.net">delphi.pythai.net</a><br />
-<a href="https://x.com/pythaiamstic">MsTic Pythia: Oracle of Delphi</a>
+<a href="https://x.com/pythaiamstic">Pythia Mystic: Oracle of Delphi</a>
 
 ```nodejs
 bankon-nodejs/
