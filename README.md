@@ -76,7 +76,8 @@ pythia-nextjs/
 
 npx create-next-app pythia-nextjs
 cd pythia-nextjs
-npm install @rainbow-me/rainbowkit wagmi ethers @web3auth/modal @web3auth/core @web3auth/web3auth-modal
+npm init
+npm install @web3auth/core @web3auth/modal ethers wagmi @rainbow-me/rainbowkit
 ```
 
 
