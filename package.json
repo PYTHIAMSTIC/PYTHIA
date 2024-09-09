@@ -1,0 +1,44 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "PYTHIA MYSTIC oracle of Delphi",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PYTHIAMYSTIC"
+  },
+  "keywords": [
+    "pythia",
+    "mystic",
+    "dapp",
+    "web3auth",
+    "wagmi"
+  ],
+  "author": "codephreak",
+  "license": "MIT",
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.1.5",
+    "@wagmi/core": "^2.13.4",
+    "@web3auth/core": "^4.6.0",
+    "@web3auth/modal": "^8.12.7",
+    "alchemy-sdk": "^3.4.1",
+    "ethers": "^6.13.2",
+    "moralis": "^2.7.4",
+    "next": "^14.2.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "wagmi": "^2.12.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7"
+  }
+}
